@@ -1,1 +1,8 @@
-# image-classification
+ # Proyek Klasifikasi Gambar: Fruit and Vegetable Disease (Healthy vs Rotten)
+- **Nama:** Sarah Adibah
+- **Email:** sarahadibah06@gmail.com
+- **ID Dicoding:** [addsarah](https://www.dicoding.com/users/addsarah/academies)
+
+Proyek ini mengembangkan model **Convolutional Neural Network (CNN)** berbasis **VGG16** untuk mengklasifikasikan kondisi buah dan sayuran dalam kategori **Healthy (sehat) dan Rotten (busuk)**. Dataset yang digunakan terdiri dari berbagai jenis buah dan sayuran yang telah diproses dengan **resize, normalisasi, dan augmentasi** agar model dapat belajar dengan lebih baik. Model dilatih menggunakan **optimizer Adam** dan **loss function categorical crossentropy**, dengan metrik evaluasi berupa **akurasi**. Selain itu, proyek ini menerapkan **EarlyStopping**, yang memungkinkan training berhenti otomatis jika akurasi telah mencapai lebih dari **95%**, sehingga mencegah overfitting . Jika training berhenti pada **epoch 1**, maka **plot loss dan akurasi tidak akan muncul** karena jumlah epoch yang berjalan terlalu sedikit untuk divisualisasikan.  
+
+Setelah pelatihan, model dikonversi ke beberapa format untuk mendukung berbagai platform, yaitu **SavedModel**, **TF-Lite**, serta **TensorFlow.js (TFJS)**. Model diuji dengan gambar baru menggunakan inference pada format **SavedModel, TF-Lite, dan TFJS**, sehingga dapat digunakan secara fleksibel. Dengan akurasi yang mencapai lebih dari **95%**, proyek ini berhasil membangun model klasifikasi gambar yang efektif untuk mendeteksi kondisi buah dan sayuran.
